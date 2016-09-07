@@ -1,3 +1,45 @@
 /*
   Main Stylesheet
 */
+
+.myAlbums__header {
+
+}
+
+.myAlbums__main {
+  margin: auto;
+  width: 600px;
+}
+
+.myAlbums__div {
+  display: inline-block;
+  margin: 0 25px;
+  width: 150px;
+}
+
+.myAlbums__img {
+  width: 150px;
+}
+
+.albums__nav {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  width: 200px;
+}
+
+
+.album__div {
+  display: inline-block;
+  text-align: center;
+  width: 600px;
+}
+
+.image {
+  margin: 25px;
+  width: 150px;
+}
+
+.image--clicked {
+  width: 100%;
+}

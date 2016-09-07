@@ -1,15 +1,15 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
-import MyAlbums from "./MyAlbums"
-import Albums from "./Albums"
-import Album from "./Album"
+import MyAlbums from "./lib/MyAlbums"
+import Albums from "./lib/Albums"
+import Album from "./lib/Album"
 
 render((
   <Router history={ hashHistory }>
-    <Route to="/myalbums" component={ MyAlbums } />
-    <Route to="/albums" component={ Albums }>
-      <Route to="/album" component={ Album } />
+    <Route path="/" component={ MyAlbums }/>
+    <Route path="/albums" component={ Albums }>
+      <Route path="/album/:imgOne" component={ Album }/>
     </Route>
   </Router>
 ), document.getElementById('app'))
