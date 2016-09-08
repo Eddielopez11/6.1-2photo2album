@@ -2,8 +2,11 @@
   Main Stylesheet
 */
 
+/*
+  Modal styles
+*/
 .modal {
-  background-color: rgba(0, 0, 25, 0.5);
+  background-color: rgba(0, 0, 10, 0.8);
   display: none;
   position: absolute;
   right: 0px;
@@ -19,9 +22,94 @@
 
 .modal__image {
   height: 100%;
+  vertical-align: top;
+}
+
+.modal__close {
+  border: 1px solid white;
+  border-radius: 2%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 25px;
+  left: 25px;
+  padding: 10px;
+  position: absolute;
+  top: 25px;
+}
+
+.modal__prev, .modal__next {
+  color: white;
+  font-size: 50px;
+  height: 650px;
+}
+
+.modal__prev {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 2%;
+  margin-top: 45%;
+  transform:scale(.7, 2);
+}
+
+.modal__next {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 2%;
+  margin-top: 45%;
+  transform:scale(.7, 2);
+}
+
+/*
+  album styles
+*/
+.myAlbums__main {
+ font-family: sans-serif;
+}
+
+.myAlbums__header {
+  text-align: center;
+}
+
+.myAlbums__nav {
+  background-color: lightgrey;
+  border-right: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  display: inline-block;
+  height: 650px;
+  vertical-align: top;
+  width: 250px;
+}
+
+.myAlbums__ul {
+  font-size: 25px;
+  list-style: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.myAlbum {
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 87%;
+}
+
+/*
+  current album styles
+*/
+.currentAlbum {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  width: 600px;
 }
 
 .image {
+  cursor: pointer;
   margin: 0 20px;
   width: 150px;
 }
